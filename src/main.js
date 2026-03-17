@@ -19,7 +19,7 @@ app.innerHTML = `
           <canvas id="game-canvas"></canvas>
 
           <div class="overlay-card" id="start-overlay">
-            <h1>Spadajace kulki</h1>
+            <h1>CatchCam</h1>
             <p class="overlay-copy">Wpisz imie i zacznij od razu. Kamera pokazuje tez wykrywanie rak i sylwetki.</p>
             <form id="player-form" class="player-form">
               <input
@@ -124,7 +124,7 @@ async function boot() {
   } catch (error) {
     startOverlay.classList.remove("is-hidden");
     startOverlay.innerHTML = `
-      <h1>Spadajace kulki</h1>
+      <h1>CatchCam</h1>
       <p class="error-copy">Nie udalo sie uruchomic kamery. Sprawdz uprawnienia przegladarki i odswiez strone.</p>
     `;
     console.error(error);
